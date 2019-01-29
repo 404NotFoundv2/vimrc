@@ -218,6 +218,8 @@ nmap <F6> :NERDTreeToggle<CR>
 
 set clipboard=unnamed
 
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
 
 " This sets the indent guides
 "let g:indent_guides_guide_size = 1
